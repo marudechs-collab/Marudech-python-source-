@@ -8,7 +8,7 @@
 print("=== PART 1: BASIC FUNCTIONS ===")
 
 # Example 1: Simple function without parameters
-def say_hello():
+def say_hello(): 
     """A simple function that prints a greeting"""
     print("Hello, World!")
     print("Welcome to Python functions!")
@@ -16,12 +16,12 @@ def say_hello():
 # Calling the function
 print("Calling say_hello():")
 say_hello()
-print()
+print() #printความว่าเปล่า
 
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
-    print("-" * 40)
+    print("-" * 40) # "-" 40รอบ
 
 draw_separator()
 print("This is between separators")
