@@ -43,7 +43,7 @@ if entered_pin == pin:
             x = float(input("ถอนเท่าไหร???:"))
             blance = balance - x
         elif choice == "3":
-            x = float(input("ถอนเท่าไหร???:"))
+            x = float(input("ฝากเท่าไหร???:"))
             deposit = deposit + x
 else:
     print("Invalid PIN")
