@@ -11,7 +11,7 @@ name = "India"
 graduate = 'B.E.'
 multiline = """This is a
 multiline string
-example"""
+example""" #"""ข้อความหลายบรรทัด"""
 
 print(f"name = {name}")
 print(f"graduate = {graduate}")
@@ -32,7 +32,7 @@ try:
     x = int(apple) - 10
     print(f"Result: {x}")
 except ValueError:
-    print("Please enter a valid number!")
+    print("Please enter a valid number!") #ป้องกันการกรอกข้อมูลนอกเหนือจากคำสั่ง
 
 # ===========================
 # 3. STRING INDEXING
@@ -63,7 +63,7 @@ message = "hello"
 index = 0
 
 print("Method 1: Using for loop with enumerate")
-for i, char in enumerate(message):
+for i, char in enumerate(message): #enumerate loopข้อความพร้อมค่าindex
     print(f"message[{i}] = {char}")
 
 print("\nMethod 2: Manual indexing")
@@ -86,7 +86,7 @@ print(f"str1 + str2 = {result}")
 
 # Multiplication
 repeat = str1 * 3
-print(f"str1 * 3 = {repeat}")
+print(f"str1 * 3 = {repeat}") #str1 + stre2 = Hello World!
 
 # ===========================
 # 6. APPENDING STRINGS
@@ -94,8 +94,8 @@ print(f"str1 * 3 = {repeat}")
 
 print("\n=== APPENDING STRINGS ===")
 greeting = 'hello'
-name = input("Enter your name: ")
-greeting += name
+name = input("Enter your name: ") #สมติใส่ชื่อ Marudech
+greeting += name #--->helloMarudech
 greeting += ". welcome to pune"
 print(greeting)
 
@@ -107,8 +107,8 @@ print("\n=== ITERATING THROUGH STRING ===")
 count = 0
 text = 'Hello World'
 for letter in text:
-    if letter == 'l':
-        count += 1
+    if letter == 'l': #หาl
+        count += 1    #เจอ count+1
 print(f"{count} letters 'l' found in '{text}'")
 
 # ===========================
@@ -202,10 +202,10 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}") #พิมใหญ่
+print(f"Lower: {text.lower()}") #พิมเล็ก
+print(f"Title: {text.title()}") #พิมเล็กตัวแรก
+print(f"Capitalize: {text.capitalize()}") #ตัวอักษรตัวแรกของทุกตัวพิมใหญ่
 
 # Search methods
 print(f"Find 'world': {text.find('world')}")
@@ -214,7 +214,7 @@ print(f"Starts with 'welcome': {text.startswith('welcome')}")
 print(f"Ends with 'python': {text.endswith('python')}")
 
 # Modification methods
-print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
+print(f"Replace 'python' with 'java': {text.replace('python', 'java')}") #repleace แทนค่า เป็น java 
 words = text.split()
 print(f"Split into words: {words}")
 print(f"Join with '-': {'-'.join(words)}")
@@ -222,11 +222,11 @@ print(f"Join with '-': {'-'.join(words)}")
 # Validation methods
 test_str = "Hello123"
 print(f"\nValidation methods for '{test_str}':")
-print(f"isalnum(): {test_str.isalnum()}")
-print(f"isalpha(): {test_str.isalpha()}")
-print(f"isdigit(): {test_str.isdigit()}")
-print(f"isupper(): {test_str.isupper()}")
-print(f"islower(): {test_str.islower()}")
+print(f"isalnum(): {test_str.isalnum()}") #ถามว่า test_str = "Hello123" ว่าเป็นข้อความหรือเลข
+print(f"isalpha(): {test_str.isalpha()}") #ถามว่า test_str = "Hello123" ว่าเป็นข้อความ
+print(f"isdigit(): {test_str.isdigit()}") #ถามว่า test_str = "Hello123" ว่าเป็นเลขไหม
+print(f"isupper(): {test_str.isupper()}") #ถามว่า test_str = "Hello123" ว่าเป็นตัวใหญ่
+print(f"islower(): {test_str.islower()}") #ถามว่า test_str = "Hello123" ว่าเป็นตัวเล็ก
 
 # ===========================
 # 13. ORD() AND CHR() FUNCTIONS
