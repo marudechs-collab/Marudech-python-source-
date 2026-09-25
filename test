@@ -1,0 +1,44 @@
+# 1. สร้าง Function สำหรับคำนวณและ return ค่า
+def calculate_tax(net_income):
+    tax = 0
+    
+    # คำนวณภาษีตามขั้นบันได
+    if net_income > 5000000:
+        tax += (net_income - 5000000) * 0.35
+        net_income = 5000000
+    if net_income > 2000000:
+        tax += (net_income - 2000000) * 0.30
+        net_income = 2000000
+    if net_income > 1000000:
+        tax += (net_income - 1000000) * 0.25
+        net_income = 1000000
+    if net_income > 750000:
+        tax += (net_income - 750000) * 0.20
+        net_income = 750000
+    if net_income > 500000:
+        tax += (net_income - 500000) * 0.15
+        net_income = 500000
+    if net_income > 300000:
+        tax += (net_income - 300000) * 0.10
+        net_income = 300000
+    if net_income > 150000:
+        tax += (net_income - 150000) * 0.05
+        net_income = 150000
+        
+    return tax  # ส่งค่าภาษีรวมที่คำนวณได้กลับออกไป
+
+
+# 2. ส่วนโปรแกรมหลัก (Main Program)
+income = float(input("กรอกเงินได้สุทธิ : "))
+
+# เรียกใช้ Function (Call Function)
+total_tax = calculate_tax(income)
+
+# คำนวณค่าเพิ่มเติม
+net_after_tax = income - total_tax
+effective_rate = (total_tax / income) * 100
+
+# แสดงผลลัพธ์
+print(f"ภาษีรวม = {total_tax:,.2f} บาท")
+print(f"รายได้หลังหักภาษี = {net_after_tax:,.2f} บาท")
+print(f"Effective Tax Rate = {effective_rate:.2f}%")
