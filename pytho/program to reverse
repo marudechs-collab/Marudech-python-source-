@@ -1,0 +1,2 @@
+text = input("พิมพ์ข้อความ: ")
+print(text[::-1])
