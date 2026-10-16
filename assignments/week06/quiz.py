@@ -28,6 +28,7 @@ return string ที่จัดรูปแบบข้อมูลผู้ใ
 
 """
 
+<<<<<<< HEAD
 def create_user_profile(username, age=18, premium = False):
     # Your Problem 3 solution
     if premium == True :
@@ -39,6 +40,11 @@ print(" create_user_profile")
 create_user_profile("Marudech", 20, True)
 create_user_profile("Piti", 19)
 create_user_profile("Boonchoo")
+=======
+def create_user_profile(username, age=18, premium=False):
+    # Your Problem 3 solution
+    pass
+>>>>>>> upstream/main
 
 """ เขียน function ชื่อ analyze_scores ที่มีคุณสมบัติดังนี้:
 

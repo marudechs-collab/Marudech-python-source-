@@ -44,6 +44,7 @@ student.add_grade(
     }
 )
 print(student.get_average_grade())  # Should print 88.5
+<<<<<<< HEAD
 print(student.get_grade_report())   # Should show all grades
 
 
@@ -81,3 +82,6 @@ class Student:
             print(grade["subject"], ":", grade["grade"])
 
         print("คะแนนเฉลี่ย:", self.get_average_grade())
+=======
+print(student.get_grade_report())   # Should show all grades
+>>>>>>> upstream/main

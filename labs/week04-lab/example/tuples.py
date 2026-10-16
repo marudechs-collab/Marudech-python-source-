@@ -13,7 +13,11 @@ not_a_tuple = (42)    # This is just an integer
 
 # Tuple from list
 my_list = [1, 2, 3, 4]
+<<<<<<< HEAD
 my_tuple = tuple(my_list) #แปลง list เป็น tuple
+=======
+my_tuple = tuple(my_list)
+>>>>>>> upstream/main
 
 # Tuple from string
 char_tuple = tuple("hello")  # ('h', 'e', 'l', 'l', 'o')

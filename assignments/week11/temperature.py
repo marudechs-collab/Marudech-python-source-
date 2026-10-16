@@ -22,6 +22,7 @@ Highest: 28 C
 Lowest: 19 C
 
 """
+<<<<<<< HEAD
 
 def get_temperaturn():
     temps = (23, 21, 25, 23, 24, 22.2, 21)
@@ -39,3 +40,6 @@ def display_analysis(avg, high, low):
     print(f"High: {high}c")
     print(f"Low: {low}c")
 
+=======
+    
+>>>>>>> upstream/main

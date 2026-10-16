@@ -8,7 +8,11 @@
 print("=== PART 1: BASIC FUNCTIONS ===")
 
 # Example 1: Simple function without parameters
+<<<<<<< HEAD
 def say_hello(): 
+=======
+def say_hello():
+>>>>>>> upstream/main
     """A simple function that prints a greeting"""
     print("Hello, World!")
     print("Welcome to Python functions!")
@@ -16,12 +20,20 @@ def say_hello():
 # Calling the function
 print("Calling say_hello():")
 say_hello()
+<<<<<<< HEAD
 print() #printความว่าเปล่า
+=======
+print()
+>>>>>>> upstream/main
 
 # Example 2: Function that performs a task
 def draw_separator():
     """Draws a line separator"""
+<<<<<<< HEAD
     print("-" * 40) # "-" 40รอบ
+=======
+    print("-" * 40)
+>>>>>>> upstream/main
 
 draw_separator()
 print("This is between separators")
